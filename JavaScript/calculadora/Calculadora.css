@@ -1,0 +1,63 @@
+
+body{
+   height: 100%;
+}
+
+
+.pestana {
+    margin-top: 1%;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: left;
+    margin-left: 30%;
+    width: 40%;
+}
+.grid-container {
+  display: grid;
+  grid-gap: 5%;
+  row-gap: 3%;
+  background:black;
+  grid-template-columns: 21% 21% 21% 21% ;
+  padding:5%;
+  
+}
+
+
+
+.grid-item {
+  background-color:grey;
+  text-align: center;
+  padding: 5%;
+  font-size: 30px;
+  border-radius:50%
+
+}
+
+.item1 {
+  grid-column: 1 / span 4;
+  background:black;
+  color:white;
+  text-align:right;
+  border:none;
+}
+
+.item2{
+background-color:#A4A4A4}
+
+
+.item3 {
+ background-color:orange;
+  
+}
+
+.item4 {
+ grid-column: 1 / span 2;
+  
+}
+
+.result{
+    font-size: 50px;
+    font-weight: bold;
+}
