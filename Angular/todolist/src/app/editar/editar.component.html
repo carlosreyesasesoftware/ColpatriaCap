@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <div class="row">
+    <div class="col-md-2">
+      <button type="button" class="btn btn-outline-dark" routerLink="/" routerLinkActive="active">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+    </div>
+
+    <div class="col-md-9">
+      <h3 class="titulo"> Edición y Creación tareas</h3>
+    </div>
+  </div>
+
+</header>
+
+<body>
+
+  <div class="contenedor">
+
+    <form [formGroup]="dataBasicoForm">
+
+      <div class="row">
+        <div class="col-md-7">
+          <div class="row">
+            <div class="col-md-3">
+                <h3 class="subtitulo">Estado</h3>
+            </div>
+            <div class="col-md 6">
+                
+              <label class="switch">
+                <input type="checkbox" formControlName="completed">
+                <span class="slider round"></span>
+              </label>
+             
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="col-md-5">
+
+          <div class="row">
+            <div class="col-md-5"> 
+                <h3 class="subtitulo">Prioridad</h3>
+            </div>
+            <div class="col-md-5">
+              <select formControlName="priority">
+                <option value="1">Baja</option>
+                <option value="2">Media</option>
+                <option value="3">Alta</option>
+                <option value="4">Muy Alta</option>
+              </select>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+      </div>
+      <div class="row">
+        <textarea rows="10" formControlName="content"> </textarea>
+      </div>
+
+
+    </form>
+
+
+    <button type="button" class="btn btn-dark"  style="margin-left:45%" (click)="crearEditar()">
+      Guardar
+    </button>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+
+.btn-icon{
+    margin-top:-2%;
+}
+.btn-circle.btn-xl {
+    width: 60px;
+    height: 60px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+    position:fixed;
+    bottom:5%;
+    right:5%;
+    z-index: 2;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+
+.listado{
+    font-family: 'Sofia';
+    font-size: 22px;
+    margin: 0% 3% 0% 6%;
+}
+
+hr{background-color: #BDBDBD;}
+
+.task
+{ 
+    border-bottom: solid 1px #BDBDBD;
+    padding-top: 5%;
+    width:100%;
+
+}
+
+.delete{
+    background-color: red;
+}
+
+
+.task:hover{
+    background-color: #D8D8D8;
+   
+}
+
+.baja {
+    background-color: rgb(217, 247, 217);
+
+}
+.media {
+    background-color: rgb(234, 235, 181)  ;
+
+}
+.alta {
+    background-color:  rgb(247, 210, 169);
+
+}
+ 
+.muyAlta {
+    background-color: rgb(241, 194, 194);
+
+}

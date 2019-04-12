@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<div class="listado">
+  <div *ngFor="let tarea of tareas">
+    
+      <div class="row task" [ngClass]="{
+        'baja': tarea.priority === 1,'media': tarea.priority === 2,'alta': tarea.priority===3, 
+                                        'muyAlta': tarea.priority===4}">
+        <div class="col-md-1"> {{tarea.order}} </div>
+        <div class="col-md-8"> {{tarea.content}} </div>
+        <div class="col-md-1 btn-icon"> <button class=" btn btn-danger" (click)="borrar(tarea.id)"> <i class="fas fa-trash-alt"></i></button></div>
+        <div class="col-md-2 btn-icon"> <button class="btn btn-warning" (click)="obtenerTarea(tarea)"> <i class="fas fa-edit"></i></button></div>
+      </div>
+    
+
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary btn-circle btn-xl" routerLink="/task" routerLinkActive="active"> <i
+    class="fas fa-plus"></i>
+</button>
+
+
+</html>
